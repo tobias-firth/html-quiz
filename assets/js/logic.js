@@ -24,7 +24,7 @@ var finalScore =
 start.addEventListener("click", displayQuestions);
 
 function displayQuestions() {
-    questionDisplay.setAttribute("style", "display:block; background-color:red; height:400px; width:100%");
+    questionDisplay.setAttribute("style", "display:block; height:400px; width:100%");
     startScreen.remove();
     var quizTimer = setInterval(function(){
         if(timeLeft <= 0){
@@ -75,7 +75,7 @@ function nextQuestion() {
   }
   else
   {
-    endScreen.setAttribute("style", "display:block; background-color:blue; height:400px; width:100%");
+    endScreen.setAttribute("style", "display:block;  height:400px; width:100%");
     questionDisplay.remove();
     finalScoreEl.innerHTML = timeLeft;
     finalScore = timeLeft
